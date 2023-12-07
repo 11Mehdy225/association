@@ -15,23 +15,35 @@
     <link rel="stylesheet" href="/css/styles2.css">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>association</title>
+    <link rel="icon" href="./image/logo.png" type="image/x-icon">
 </head>
 <body>
     <!--le menu du site -->
     <!--notre header qui contient le menu et le logo de l'association elle a une div enfant de class navbar-->
     <!--qui nous servira a mieux disposer nos elements -->
     <header>
-        <div class="navbar">
-            <img src="/image/logo.png" alt="logo_association">
-            <nav>
-                <a href="">about</a>
-                <a href="">contacts</a>
-                <a href="">inscription</a>
-                <!--le bouton qui est dans le menu-->
-                <button class="donate" id="don" type="" name="">DONATE NOW!</button>
-            </nav>
-        </div>
-    </header>
+        <nav id="nav">
+          <img src="./image/logo.png" alt="logo">
+          <ul>
+            <li>
+              <a href="#">accueil</a>
+            </li>
+            <li>
+              <a href="#">about us</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+            <li>
+              <a href="#">inscription</a>
+            </li>
+            <li>
+              <button class="donate" id="don" type="" name="">DONATE NOW!</button>
+            </li>
+          </ul>
+          <div id="icons"></div>
+        </nav>
+      </header>
     <!--le corps de notre site-->
     <main>
         <!--cette section accueil le diapo dans une div et une seconde div qui a des icones cliquables -->

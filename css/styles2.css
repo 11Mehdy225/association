@@ -15,69 +15,102 @@
        font-family:'Poppins', sans-serif;
     }
    
-   /*le header*/
-   /*la largeur est definie ici car nous voulons qu'elle se limite à la taille de notre slide/image*/
-   /*un margin auto pour le centrer et le zindex pour qu'il soit au dessus de notre image car les 2 
-   elements ont un top  àa 0*/
-       header {
-         width: 1400px;
-         top: 0 ;
-         margin: auto;
-         display: flex;
-         justify-content: space-between;/*espacer les elements , l'image et les liens hypertextes*/
-         align-items: center;
-         z-index: 3;
-       }
-   
-       /*la barre / juste les liens hypertextes */
-   
-   .navbar{
-     display: flex;
-     justify-content: space-evenly;/*lespaces entre les le logo et le reste de mon menu*/
-     align-items: center;
-     top: 0;
-     left: 0;
-     width: 100%;
-     background-color:transparent;/*cette couleur sera modifiée lorsque nous allons scroller*/ 
-     position: fixed;
-     z-index: 3;
-   }
-   
-   /*nos liens hypertextes*/
-   a {
-     text-decoration: none;
-     margin-right: 15px;
-   }
-
-   nav a {
+    /**** NAVBAR ****/
+  li {
+    list-style: none;
+  }
+  a,
+  a:visited {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  a {
     color: white;
-   }
-
-
-   nav a:hover {
+    margin-right:5px ;
+    font-size: 20px;
+  }
+  a:hover {
     color: gray;
-   }
-   /*notre logo*/
-   .navbar img {
-     width: 200px;
-     height: 150px;
-   }
-   /*le bouton qui est contenu dans notre barre de navigation*/
-   .donate {
-     font-family:'Prompt', sans-serif;
-     color: white;
-     border-radius: 20px;
-     border: none;
-     padding: 10px 30px;
-     background-color:rgb(83, 5, 83);
-     cursor: pointer;
-   
-   }
-/*le bouton de la barre au survol*/
-   .donate:hover{
-    background-color: rgb(217, 92, 112);
+  }
+  
+  header {
+    width: 100%;
+    top: 0 ;
+    z-index: 3;
+  }
+  nav img {
+    width: 300px;
+    height: 250px;
+  }
 
-   }
+  nav {
+    background:transparent;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    font-size: calc(0.5rem + 1.5vw);
+    z-index: 3;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+    /*le bouton qui est contenu dans notre barre de navigation*/
+    .donate {
+      font-family:'Prompt', sans-serif;
+      color: white;
+      border-radius: 20px;
+      border: none;
+      padding: 10px 30px;
+      background-color:rgb(83, 5, 83);
+      cursor: pointer;
+    
+    }
+ /*le bouton de la barre au survol*/
+    .donate:hover{
+     background-color: rgb(217, 92, 112);
+ 
+    }
+  #icons {
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 650px) {
+    #icons {
+      display: block;
+    }
+    #icons:before {
+      content: "\2630";
+    }
+    .active #icons:before {
+      content: "\2715";
+    }
+    nav ul {
+      position: fixed;
+      left: -100%;
+      top: 5%;
+      flex-direction: column;
+      background: transparent;
+      width: 100%;
+      text-align: center;
+      transition: 0.25s;
+      z-index: 3;
+    }
+    nav li {
+      padding: 3px 0;
+    }
+    nav li:hover {
+      background: transparent;
+    }
+    nav.active ul {
+      left: 0;
+    }
+  }
 
 /*les divs qui sont sur notre slide la div principale qui contient toute les autres div*/
    .don_categorie {

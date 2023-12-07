@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!--lien boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!--lien fontawesome-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js">
+   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!--ce fichier css est uniquement pour le slide du main-->
+   <link rel="stylesheet" href="/css/style.css">
+   <!--ce css pour nos autres fichiers/pages-->
+    <link rel="stylesheet" href="/css/styles2.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>association</title>
+</head>
+<body>
+    <!--le menu du site -->
+    <!--notre header qui contient le menu et le logo de l'association elle a une div enfant de class navbar-->
+    <!--qui nous servira a mieux disposer nos elements -->
+    <header>
+        <div class="navbar">
+            <img src="/image/logo.png" alt="logo_association">
+            <nav>
+                <a href="">about</a>
+                <a href="">contacts</a>
+                <a href="">inscription</a>
+                <!--le bouton qui est dans le menu-->
+                <button class="donate" id="don" type="" name="">DONATE NOW!</button>
+            </nav>
+        </div>
+    </header>
+    <!--le corps de notre site-->
+    <main>
+        <!--cette section accueil le diapo dans une div et une seconde div qui a des icones cliquables -->
+        <!--que nous devons positioner sur le slide-->
+        <section class="slide_ngo">
+            <!--la div diapo qui contient le slide elle a plusieurs div enfants qui comprennent chaque image et texte associé-->
+        <div class="diapo" >
+            <!--la div qui comprend touutes les div des images sans les fleches de navigation-->
+            <div class="elements">
+                <!--a ce niveau l'explication se fera une seule fois car les autres div des slide 
+                ont la meme disposition elle est comprise de l'image et d'une div de class captio qui comprend 
+                le texte afferant a chque image et un bouton -->
+                <div class="element">
+                    <img src="/slides/s1.jpg" alt="stade ado ">
+                    <div class="caption" id="fondu">
+                        <h1>lorem ipsummmmmmmmmmmmm</h1>
+                        <br>
+                        <h2>association</h2>
+                        <br>
+                        <button type="" name="">become parent</button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/slides/s2.jpg" alt="stade bouake ">
+                    <div class="caption" id="fondu">
+                        <h1>lorem ipsummmmmmmmmmmmm</h1>
+                        <br>
+                        <h2>association</h2>
+                        <br>
+                        <button type="" name="">become parent</button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/slides/s3.jpg" alt="stade korhogo ">
+                    <div class="caption" id="fondu">
+                        <h1>lorem ipsummmmmmmmmmmmm</h1>
+                        <br>
+                        <h2>association</h2>
+                        <br>
+                        <button type="" name="">become parent</button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="/slides/s4.jpg"  height="" alt="stade sp ">
+                    <div class="caption" id="fondu">
+                        <h1>lorem ipsummmmmmmmmmmmm</h1>
+                        <br>
+                        <h2>association</h2>
+                        <br>
+                        <button type="" name="">become parent</button>
+                    </div>
+                </div> 
+            </div>
+            <!--fleches pour changer les images-->
+            <i id="nav-gauche" class="las la-chevron-left"></i>
+            <i id="nav-droite" class="las la-chevron-right"></i>
+        </div>
+        <!--cette div contient les icones cliquable positionée sur le slide-->
+        <div class="don_categorie">
+            <a href=""><div class="don" style="background-color: rgba(128, 0, 128, 0.6);"></div></a>
+            <a href=""><div class="volontaire" style=" background-color: rgba(255, 192, 203, 0.6);"></div></a>
+            <a href=""><div class="sponsor" style="background-color: rgba(255, 165, 0, 0.6);"></div></a>
+            <a href=""><div class="foster" style="background-color: rgba(255, 255, 0, 0.6);"></div></a>
+        </div>
+    </section>
+     <!--cette section contient la seconde partie de notre page texte et images-->
+    <section class="charity_mission">
+         <!--du texte -->
+        <div class="mission">
+            <h5>children charity mission</h5>
+            <h2>All children deserve to live in safe, nurturing homes</h2>
+            <h2>where they can feel valued and loved.</h2>
+        </div>
+         <!--ici nous avons une div option1 qui contient 2 div soit un texte qui a un bouton et l'image
+        meme principe et disposition pour la div qui la suit -->
+        <div class="option1">
+             <!--texte-->
+            <div class="prevention1">
+                <h2>Child Abuse Prevention</h2>
+                <br>
+                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, 
+                and printing in place of English to emphasise design elements over content.</p>
+                <br>
+                <button type="" name="">GET INVOLVED</button>
+            </div>
+             <!--image-->
+            <div class="image_prevention1">
+                <img src="/image/child_funny.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="option2">
+            <div class="image_prevention2">
+                <img src="/image/mere_eft.jpg" alt="">
+            </div>
+            <div class="prevention2">
+                <h2>Foster Care & Adoption</h2>
+                <br>
+                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, 
+                and printing in place of English to emphasise design elements over content.</p>
+                <br>
+                <button name="" type="" >LEARN NOW!</button>
+            </div>
+        </div>
+    </section>
+    </main>
+        <!--nous avons ici notre fichier js qui porte uniquement sur le slide-->
+      <script src="/js/js.js"></script>
+</body>
+</html>

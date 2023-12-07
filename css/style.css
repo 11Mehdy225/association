@@ -1,0 +1,104 @@
+   /*cette feuille de style est uniquement dédiée au slide*/
+   
+   /*importation de la police generale du site*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins&family=Prompt:wght@300&family=Roboto+Mono:wght@400;606&family=Roboto:wght@100;400&display=swap');
+
+/*propriete pour les balises racines*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   width:auto;
+}
+
+
+/*la police definie a tout les elements du body*/
+ body{
+    font-family:'Poppins', sans-serif;
+ }
+
+
+
+/*le slide d'image*/
+.slide_ngo {
+  width: 1400px;
+  top: 0 ;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  position: relative;
+}
+    /*la position de nos images avec un overflow pour cacher les autres images*/
+    /*faites pas attention au z-index je vais le retirer plus tard */
+    .diapo {
+       position: relative;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+/*la div qui comprend tout les div enfant  en display flex pour mieux appliquer les styles*/
+    .elements{
+      display: flex;
+     }
+/*la div general qui a l'image les textes et autres bouton */
+    .element{
+      flex: 1 0 100%;
+      position: relative;
+    }
+
+    .element > img {
+      width: 100%;
+      border-radius: 10px;
+    }
+/*Position des titres des images */
+    .caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: transparent ;
+      text-align: center;
+    }
+/*les texte et bouton des images*/
+    .caption h1 , h2 , button{
+      
+      font-weight: 100px;
+      font-family:'Poppins', sans-serif;;
+    }
+/*bouton de chaque image*/
+    .caption button {
+      padding: 15px 55px;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      border-radius: 50px 30px;
+      
+    }
+/*les bouton au survol*/
+    .caption button:hover {
+      background-color:  rgba(255, 255, 255, 0.3);;
+    }
+
+
+ /*les fleches de navigation du slide en opacity 0 pour le moment c*/
+ /*on en a pas besoin pour le moement je reviendrai*/
+    #nav-gauche {
+       position: absolute;
+      top: 50%;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-50%);
+      font-size: 3rem;
+      cursor: pointer;
+      opacity: 0;
+    }
+    #nav-droite {
+      position: absolute;
+      top: 50%;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-50%);
+      right: 0;
+      font-size: 3rem;
+      opacity: 0;
+    }

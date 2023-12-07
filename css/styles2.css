@@ -1,0 +1,140 @@
+   /*importation de la police generale du site*/
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins&family=Prompt:wght@300&family=Roboto+Mono:wght@400;606&family=Roboto:wght@100;400&display=swap');
+
+   /*propriete pour les balises racines*/
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width:auto;
+   }
+   
+   
+   /*la police definie a tout les elements du body*/
+    body{
+       font-family:'Poppins', sans-serif;
+    }
+   
+   /*le header*/
+   /*la largeur est definie ici car nous voulons qu'elle se limite à la taille de notre slide/image*/
+   /*un margin auto pour le centrer et le zindex pour qu'il soit au dessus de notre image car les 2 
+   elements ont un top  àa 0*/
+       header {
+         width: 1400px;
+         top: 0 ;
+         margin: auto;
+         display: flex;
+         justify-content: space-between;/*espacer les elements , l'image et les liens hypertextes*/
+         align-items: center;
+         z-index: 3;
+       }
+   
+       /*la barre / juste les liens hypertextes */
+   
+   .navbar{
+     display: flex;
+     justify-content: space-evenly;/*lespaces entre les le logo et le reste de mon menu*/
+     align-items: center;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color:transparent;/*cette couleur sera modifiée lorsque nous allons scroller*/ 
+     position: fixed;
+     z-index: 3;
+   }
+   
+   /*nos liens hypertextes*/
+   a {
+     text-decoration: none;
+     margin-right: 15px;
+   }
+
+   nav a {
+    color: white;
+   }
+
+
+   nav a:hover {
+    color: gray;
+   }
+   /*notre logo*/
+   .navbar img {
+     width: 200px;
+     height: 150px;
+   }
+   /*le bouton qui est contenu dans notre barre de navigation*/
+   .donate {
+     font-family:'Prompt', sans-serif;
+     color: white;
+     border-radius: 20px;
+     border: none;
+     padding: 10px 30px;
+     background-color:rgb(83, 5, 83);
+     cursor: pointer;
+   
+   }
+/*le bouton de la barre au survol*/
+   .donate:hover{
+    background-color: rgb(217, 92, 112);
+
+   }
+
+/*les divs qui sont sur notre slide la div principale qui contient toute les autres div*/
+   .don_categorie {
+    position: absolute;
+    display: flex;
+    margin-left: 210px;
+    margin-top:500px;
+   }
+/*pour rendre cliquable nos balise nous les avons mi dans une balise a
+le margin ici permet de supprimer lespace entre les balises */
+.don_categorie a   {
+    margin: 0;
+    cursor: pointer;
+}
+/*nos balises avec les meme proprietes hormis les background*/
+   .don ,.volontaire, .sponsor, .foster {
+    width: 240px;
+    height: 150px;
+    margin-top:0;
+   }
+
+
+   .mission {
+    margin: 10% 30% 10% 30%;
+    text-align: center;
+   }
+
+   .mission h5 {
+    text-transform: uppercase;
+    color: rgb(211, 22, 53);
+    margin-bottom: 40px;
+   }
+
+   .option1 , .option2 {
+    display: flex;
+    width: 1127px;
+    margin-left:15%;
+   }
+
+   .prevention2 {
+                    margin-left: 40px;
+   }
+
+   .prevention1 h2 , .prevention2 h2 {
+        margin-top: 100px;
+        font-weight: 100px;
+   }
+   .prevention1 p , .prevention2 p {
+    color: gray;
+   }
+
+   .prevention1 button , .prevention2 button {
+    font-family:'Prompt', sans-serif;
+     color: white;
+     border-radius: 20px;
+     border: none;
+     padding: 10px 30px;
+     background-color:rgb(244, 124, 144);
+     cursor: pointer;
+   }

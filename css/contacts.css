@@ -1,0 +1,100 @@
+  /*importation de la police generale du site*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins&family=Prompt:wght@300&family=Roboto+Mono:wght@400;606&family=Roboto:wght@100;400&display=swap');
+
+  /*propriete pour les balises racines*/
+  *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     width:auto;
+  }
+  
+  
+  /*la police definie a tout les elements du body*/
+   body{
+      font-family:'Poppins', sans-serif;
+     font-weight:50%;
+   }
+
+
+   /*la maps_contact*/
+
+   .maps_contacts{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            flex-direction: column;
+   }
+
+   /*la maps integree via google*/
+ 
+   .maps iframe{
+    width: 960px;
+    
+   }
+
+   /*les div de champs de contacts*/
+   .info_contacts {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+   }
+
+   /*nos balises avec les meme proprietes hormis les background*/
+   .faire_un_don ,.envoi_mail, .lieu, .contact {
+    width: 240px;
+    height: 170px;
+    margin-top:0;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    
+   }
+
+   .faire_un_don button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    color: white;
+   }
+
+   button:hover{
+    color:rgb(196, 191, 191);
+   }
+
+   /*notre formulaire*/
+   input, textarea, button {
+    border-radius: 5px;
+  }
+  
+  input  {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 100px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+
+  .colab_btn_send{
+      color: white;
+      border-radius: 20px;
+      border: none;
+      padding: 10px 30px;
+      background-color:rgb(83, 5, 83);
+      cursor: pointer;
+      text-transform: uppercase;
+      width: 100%;
+      margin-top: 20px;
+    }
+ /*le bouton de la barre au survol*/
+  .colab_btn_send:hover{
+     background-color: rgb(217, 92, 112);
+ 
+  }

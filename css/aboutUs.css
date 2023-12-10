@@ -1,0 +1,58 @@
+  /*importation de la police generale du site*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins&family=Prompt:wght@300&family=Roboto+Mono:wght@400;606&family=Roboto:wght@100;400&display=swap');
+
+  /*propriete pour les balises racines*/
+  *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     width:auto;
+  }
+  
+  
+  /*la police definie a tout les elements du body*/
+   body{
+      font-family:'Poppins', sans-serif;
+     font-weight:50%;
+   }
+
+
+   .full_width img{
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    position: relative;
+   }
+
+   .aboutUs {
+    position: absolute;
+    margin-left: 35%;
+    margin-top:-700px;
+    text-align: center;
+   }  
+   
+   .aboutUs h1 , h4 {
+    color: white;
+    margin-top: 10px;
+   } 
+   .aboutUs  h4 {
+    margin-top: 40px;
+   } 
+
+
+
+   .read_vision {
+        color: white;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 30px;
+        background-color:#df427a;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 400px;
+        margin-top: 30px;
+      }
+      .read_vision:hover{
+         background-color:rgb(83, 5, 83);
+      }
+ 

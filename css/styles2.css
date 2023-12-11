@@ -118,7 +118,36 @@
     display: flex;
     margin-left: 210px;
     margin-top:500px;
+    opacity: 0;
+    animation: fade-in 2.1s ease-in-out forwards;/*animation pour apparution pprogressive*/
    }
+
+   /*animation */
+   .don {
+    animation-delay: 0.5s;
+  }
+  
+  .volontaire {
+    animation-delay: 0.20s;
+  }
+  
+  .sponsor {
+    animation-delay: 0.35s;
+  }
+  
+  .foster {
+    animation-delay: 0.50s;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
 /*pour rendre cliquable nos balise nous les avons mi dans une balise a
 le margin ici permet de supprimer lespace entre les balises */
 .don_categorie a   {
